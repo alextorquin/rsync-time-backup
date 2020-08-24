@@ -542,7 +542,7 @@ while : ; do
 	fn_log_info "From: $SSH_SRC_FOLDER_PREFIX$SRC_FOLDER/"
 	fn_log_info "To:   $SSH_DEST_FOLDER_PREFIX$DEST/"
 
-	CMD="rsync --sparse"
+	CMD="rsync"
 	if [ -n "$SSH_CMD" ]; then
 		RSYNC_FLAGS="$RSYNC_FLAGS --compress"
 		if [ -n "$ID_RSA" ] ; then
